@@ -107,6 +107,7 @@ input:focus{
     color: var(--color-bg-container);
     border-radius: 5px;
     font-size: 19px;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 input[type="number"] {
     appearance: textfield;
@@ -174,6 +175,21 @@ button.active {
 }
 .error.active{display: block;}
 .person-count.active{border: 2px solid #e17052;}
+input:hover{
+    cursor: pointer;
+    border: 2px solid var(--color-input-focus-border);
+}
+.tips label:hover span {
+    background-color: #9FE8DF;
+    color: var(--color-input-text);
+    cursor: pointer;
+}
+button:hover{
+    background-color: #9FE8DF;
+}
+
+
+
 
 
 @media screen and (min-width:48rem) {
